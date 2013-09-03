@@ -1,0 +1,20 @@
+QUICK INSTRUCTIONS
+
+To run Simulation1 to output to log/simulation_results_log.txt:
+
+php runsimulation.php
+
+To run the unit tests:
+
+php runallunittests.php
+
+To create a simulation:
+
+Extend BaseSimulation, define GetPremiumHands() and GetSubPremiumHands()
+Example: class.Simulation1.php
+
+NOTES
+
+The log file simulation_results_log.txt is a raw output of data from the simulation. If the simulation is small (10 hands), you get verbose output for those hands. For all simulations, you get a count of how many of each hand was dealt and how often those hands won.
+
+Currently this assumes the hand is completely played out with all hands, which does happen in limit Hold 'em.
